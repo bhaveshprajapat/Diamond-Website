@@ -1,33 +1,93 @@
 body {
-    height: 100vh;
     background-size: cover;
     overflow: hidden;
     margin: 0; 
 }
 header {
-    background-color: rgb(0, 148, 216);
+    background-color: rgb(0, 148, 216);s
+    padding: 8px;
     width: 100%;
-}
-nav ul{
-    list-style: none;
-    list-style-position: inside;
-    display: block; 
-    width: 100%;
-}
-nav ul li {
-    display: inline-block;
-    margin: 5px, 10px, 5px, 10px;
+    overflow: hidden;
 }
 header h1 {
     margin: 0;
     color: lightgray;
-    font-size: 3.5em;
-    padding: 20px;
+    font-size: 1.25em;
+    text-align:left;
+    padding: 2% 5%;
 }
 h1{
     font-family: sans-serif;
 }
-@media (min-width: 600px) {
+nav {
+    margin: 0;
+    padding: 5px 5%;
+    color: gainsboro;
+    background-color: #64B5F6;
+    overflow: hidden;
+    padding-left: 3px;
+}
+nav ul{
+    margin: 0;
+    padding: 5px 5%;
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+    padding-right: 1.5%;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.45em;
+    color: gainsboro;
+}
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.75em;
+    color: antiquewhite;
+}
+a:hover{
+    text-decoration: underline;
+}
+footer{
+    overflow: hidden;
+    margin: 0em auto;
+    width: 100%;
+    background-color: skyblue;
+}
+footer p a{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.75em;
+    color: black;
+}
+footer p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+
+/*MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH*/
+@media (min-width: 800px) {
     body {
-        
+
+    }
+    nav ul{
+        margin-top: 0;
+        list-style: none;
+
+    }
+    header h1 {
+        font-size: 4em;
+        text-align: left;
+        font-size: 2em;
+        padding: 5px 5%;
+    }
+    nav ul li {
+        text-align: left;
+        padding-right: 1%;
+        font-family: sans-serif;
+        font-size: 0.5em;
+        color: antiquewhite;
+    }
 }
