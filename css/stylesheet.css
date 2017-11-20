@@ -1,6 +1,4 @@
 body {
-    background-size: cover;
-    overflow: hidden;
     margin: 0; 
 }
 header {
@@ -20,16 +18,12 @@ h1{
     font-family: sans-serif;
 }
 nav {
-    margin: 0;
     padding: 5px 5%;
     color: gainsboro;
     background-color: #64B5F6;
-    overflow: hidden;
-    padding-left: 3px;
+    width: 100%;
 }
 nav ul{
-    margin: 0;
-    padding: 5px 5%;
     list-style: none;
 }
 nav ul li {
@@ -51,9 +45,9 @@ a:hover{
 }
 footer{
     overflow: hidden;
-    margin: 0em auto;
     width: 100%;
     background-color: skyblue;
+    padding: 3px 3%;
 }
 footer p a{
     text-align: center;
