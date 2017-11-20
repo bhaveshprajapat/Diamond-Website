@@ -1,11 +1,12 @@
 body {
-    margin: 0; 
+    margin: 0px;
+    width:100%;
+    overflow-x:hidden;
 }
 header {
     background-color: rgb(0, 148, 216);
-    padding: 8px;
+    padding: 5px 5%;
     width: 100%;
-    overflow: hidden;
 }
 header h1 {
     margin: 0;
@@ -24,6 +25,7 @@ nav {
     width: 100%;
 }
 nav ul{
+    display: inline;
     list-style: none;
 }
 nav ul li {
@@ -47,7 +49,7 @@ footer{
     overflow: hidden;
     width: 100%;
     background-color: skyblue;
-    padding: 3px 3%;
+    padding: 5px 5%;
 }
 footer p a{
     text-align: center;
@@ -60,7 +62,30 @@ footer p{
     font-family: sans-serif;
     font-size: 0.7em;
 }
-
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 5px 5% 5px 5%;
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+#50card1{
+    float: left;
+    display:inline-block;
+}
+#50card2{
+    float: right;
+    display:inline-block;
+}
+#homepgdiamondimg{
+    float: right;
+    width: 10%;
+}
 /*MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH*/
 @media (min-width: 800px) {
     body {
@@ -72,10 +97,10 @@ footer p{
 
     }
     header h1 {
-        font-size: 4em;
+        font-size: 2em;
         text-align: left;
         font-size: 2em;
-        padding: 5px 5%;
+        padding: 5px 3%;
     }
     nav ul li {
         text-align: left;
