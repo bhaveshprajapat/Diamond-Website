@@ -13,7 +13,7 @@ header h1 {
     color: lightgray;
     font-size: 1.25em;
     text-align:left;
-    padding: 2% 5%;
+    padding: 2% 3%;
 }
 h1{
     font-family: sans-serif;
@@ -27,6 +27,7 @@ nav {
 nav ul{
     display: inline;
     list-style: none;
+    padding: 3%;
 }
 nav ul li {
     display: inline;
@@ -82,20 +83,22 @@ section{
     body {
 
     }
+
+    header h1 {
+        font-size: 1.5em;
+        text-align: left;
+        font-size: 2em;
+        padding: 5px 1%;
+    }
+    nav{
+        padding: 5px 3.5%;
+    }
     nav ul{
         margin-top: 0;
         list-style: none;
-
-    }
-    header h1 {
-        font-size: 2em;
-        text-align: left;
-        font-size: 2em;
-        padding: 5px 3%;
     }
     nav ul li {
         text-align: left;
-        padding-right: 1%;
         font-family: sans-serif;
         font-size: 0.5em;
         color: antiquewhite;
