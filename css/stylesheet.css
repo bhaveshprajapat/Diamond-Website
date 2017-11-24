@@ -71,20 +71,11 @@ footer p{
 .card:hover {
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
-.container {
-    padding: 2px 16px;
-}
-#50card1{
-    float: left;
-    display:inline-block;
-}
-#50card2{
-    float: right;
-    display:inline-block;
-}
-#homepgdiamondimg{
-    float: right;
+#homeimg{
     width: 10%;
+}
+section{
+    margin: 0% 5px;
 }
 /*MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH*/
 @media (min-width: 800px) {
