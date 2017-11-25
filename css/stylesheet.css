@@ -28,6 +28,7 @@ nav ul{
     display: inline;
     list-style: none;
     padding: 3%;
+    margin-right: 0;
 }
 nav ul li {
     display: inline;
@@ -36,6 +37,7 @@ nav ul li {
     font-family: sans-serif;
     font-size: 0.45em;
     color: gainsboro;
+    
 }
 a{
     text-decoration: none;
@@ -80,27 +82,20 @@ section{
 }
 /*MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH*/
 @media (min-width: 800px) {
-    body {
-
-    }
-
     header h1 {
-        font-size: 1.5em;
         text-align: left;
         font-size: 2em;
-        padding: 5px 1%;
-    }
-    nav{
-        padding: 5px 3.5%;
+        padding: 1% 3%;
     }
     nav ul{
         margin-top: 0;
+        padding: 2% 3%;
         list-style: none;
     }
     nav ul li {
         text-align: left;
         font-family: sans-serif;
-        font-size: 0.5em;
+        font-size: 0.6em;
         color: antiquewhite;
     }
 }
