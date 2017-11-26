@@ -13,6 +13,7 @@ body {
 /* Header styling */
 header {
     background-color: rgb(0, 148, 216);
+    background-color: #1085E5;
     padding: 5px 3%;
 }
 header h1 {
@@ -28,8 +29,13 @@ h1, p{
 /* Navbar styling */
 nav {
     padding: 5px 2%;
+    <<<<<<< Updated upstream
     color: gainsboro;
     background-color: rgb(100, 181, 246);
+    =======
+    color: white;
+    background-color: #0E77CD;
+    >>>>>>> Stashed changes
 }
 nav ul{
     display: inline;
@@ -48,18 +54,18 @@ nav ul li {
     text-align: left;
     font-family: sans-serif;
     font-size: 0.45em;
-    color: gainsboro;
+    color: white;
 }
 nav ul li a{
     text-decoration: none;
     font-family: sans-serif;
     font-size: 1.75em;
-    color: antiquewhite;
+    color: white;
 }
 /* CSS for links in Navbar*/
 nav ul li a:hover {
     color: white;
-    background-color: rgb(101, 148, 188);
+
 }
 a:hover{
     text-decoration: underline;
@@ -175,7 +181,7 @@ img:hover {
 Footer related CSS
 */
 footer{
-    background-color: skyblue;
+    background-color: #0E77CD;
     padding: 5px 5%;
 }
 footer p{
@@ -184,11 +190,13 @@ footer p{
     text-align: center;
     font-family: sans-serif;
     font-size: 0.8em;
+    color: white;
 }
 footer a{
+    text-decoration: none;
     font-family: sans-serif;
+    color: white;
     font-size: 1.1em;
-    color: black;
 }
 
 
