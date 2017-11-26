@@ -244,11 +244,12 @@ MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
         margin-left: auto;
         margin-right: auto;
     }
-    /*
-    FORM CSS STARTS
-    */
-    input[type=text], .byline, textarea{
+    input[type=text], .byline, textarea, input[type=email]{
         width: 50%;
+        display: block;
+        margin: auto;
+    }
+    button{
         display: block;
         margin: auto;
     }
