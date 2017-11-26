@@ -31,14 +31,14 @@
             <form action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="POST">
                 <input type="hidden" name="recipient"
                        value="BPrajapat1@sheffield.ac.uk">      
-                <span class="byline">First name:</span><br>
-                <input type="text" name="firstname" placeholder="Type your first name..." autocorrect=off autocapitalize=words required><br><br>
-                <span class="byline">Surname:</span><br>
-                <input type="text" name="lastname" placeholder="Type your surname..." autocorrect=off autocapitalize=words required><br><br>
-                <span class="byline">E-mail Address:</span><br>
-                <input type="email" name="email" placeholder="Type your email address..." autocorrect=off type=email required><br><br>
-                <span class="byline">Comments:</span><br>
-                <textarea name="message" rows="10" cols="30" placeholder="Type any comments here..."></textarea><br><br>
+                <label for="txtbxFirstName" class="byline">First name:</label><br>
+                <input type="text" name="firstname" placeholder="Type your first name..." id="txtbxFirstName" autocorrect=off autocapitalize=words required><br><br>
+                <label for="txtbxFirstName" class="byline">Surname:</label><br>
+                <input type="text" name="lastname" placeholder="Type your surname..." id="txtbxSurname" autocorrect=off autocapitalize=words required><br><br>
+                <label for="txtbxEmail" class="byline">E-mail Address:</label><br>
+                <input type="email" name="email" placeholder="Type your email address..." id ="txtbxEmail" autocorrect=off type=email required><br><br>
+                <label for="txtbxComments" class="byline">Comments:</label><br>
+                <textarea name="message" rows="10" cols="30" placeholder="Type any comments here..." id="txtbxComments"></textarea><br><br>
                 <button type="submit" class="button">Click here to Submit</button>
             </form>
         </main>
