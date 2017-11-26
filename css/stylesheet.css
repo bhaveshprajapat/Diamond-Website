@@ -29,13 +29,13 @@ h1, p{
 /* Navbar styling */
 nav {
     padding: 5px 2%;
-<<<<<<< Updated upstream
+    <<<<<<< Updated upstream
     color: gainsboro;
     background-color: rgb(100, 181, 246);
-=======
+    =======
     color: white;
     background-color: #0E77CD;
->>>>>>> Stashed changes
+    >>>>>>> Stashed changes
 }
 nav ul{
     display: inline;
@@ -65,7 +65,7 @@ nav ul li a{
 /* CSS for links in Navbar*/
 nav ul li a:hover {
     color: white;
-    
+
 }
 a:hover{
     text-decoration: underline;
