@@ -101,48 +101,43 @@ card:hover {
 section{
     margin: 10px 9%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 1% 1%;
-    padding: 3% 3%;
+    margin: 0 1%;
+    padding: 2% 6%;
     transition: 0.3s;
 }
 section:hover {
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
-.centeredfigurebig{
-    font-family: sans-serif;
-    text-align: center;
-    display: block;
-    margin: 2% auto;
+
+.bigimg{
     width: 45vw;
+    margin: 2% 3%;
 }
-.centeredfiguresmall{
+.regimg{
+    width: 35vw;
+    margin: 2% 3%;
+}
+.smallimg{
+    width: 30vw;
+    margin: 2% 3%;
+}
+.xsmallimg{
+    width: 25vw;
+    margin: 2% 3%;
+}
+.floatright{
+    display: block;
+    margin: 1% auto;
+}
+.floatleft{
+    display: block;
+    margin: 1% auto;
+}
+.centered{
     font-family: sans-serif;
     text-align: center;
     display: block;
     margin: 0.5% auto;
-    width: 30vw;
-}
-.centeredfigurexsmall{
-    font-family: sans-serif;
-    text-align: center;
-    display: block;
-    margin: 0.5% auto;
-    width: 30vw;
-}
-.centeredfigcaption{
-    text-align: center;
-    font-family: sans-serif;
-    margin: 1% auto;
-}
-.floatimageright{
-    display: block;
-    margin: 1% auto;
-    width: 30vw;
-}
-.biggerfloatimageright{
-    display: block;
-    margin: 1% auto;
-    width: 30vw;
 }
 /*
 FORM CSS START
@@ -221,35 +216,33 @@ MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
         font-size: 0.6em;
         color: antiquewhite;
     }
-    gridcolumn {
-        width: 100%;
-    }
-    .floatimageright{
+    .floatright{
         float: right;
-        margin: 2% 2%;
-        width: 15vw;
     }
-    .biggerfloatimageright{
-        float: right;
-        margin: 2% 2%;
-        width: 30vw;
+    .floatleft{
+        float: left;
     }
-    .centeredfigurebig{
+    .bigimg{
         width: 35vw;
+        margin: 0.5% 3%;
     }
-    .centeredfiguresmall{
-        font-family: sans-serif;
-        text-align: center;
-        display: block;
-        margin: 0.5% auto;
+    .regimg{
+        width: 35vw;
+        margin: 0.5% 3%;
+    }
+    .smallimg{
         width: 20vw;
+        margin: 0.5% 3%;
     }
-    .centeredfigurexsmall{
+    .xsmallimg{
+        width: 10vw;
+        margin: 0.5% 3%;
+    }
+    .centered{
         font-family: sans-serif;
         text-align: center;
-        display: block;
-        margin: 2% auto;
-        width: 10vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     /*
     FORM CSS STARTS
