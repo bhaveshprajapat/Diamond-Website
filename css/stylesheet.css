@@ -177,7 +177,6 @@ Footer related CSS
 footer{
     background-color: skyblue;
     padding: 5px 5%;
-    position: sticky;
 }
 footer p{
     margin: 0.5% auto;
