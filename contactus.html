@@ -24,17 +24,24 @@
 
         <section>
             <h1>Contact Us</h1>
-            <p>Complete form below</p>
+            <p>If you would like to contact us please email us at:</p>
+            <ul>
+                <li>SBone1@sheffield.ac.uk</li>
+                <li>BPrajapat1@sheffield.ac.uk</li>         
+            </ul>
+            <p> or Complete form below</p>
             <form action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="POST">
                 <input type="hidden" name="recipient"
                        value="BPrajapat1@sheffield.ac.uk">
-                <span class="byline">First name:</span><br><br>
-                <input type="text" name="firstname" autocorrect=off autocapitalize=words><br><br>
-                <span class="byline">Surname:</span><br><br>
-                <input type="text" name="lastname" autocorrect=off autocapitalize=words><br><br>
-                <span class="byline">E-mail Address:</span><br><br>
-                <input type="text" name="email" type=email><br><br>
-                <textarea name="message" rows="10" cols="30">Write any other info you would like submitted here.</textarea><br><br>
+                
+                <span class="byline">First name:</span><br>
+                <input type="text" name="firstname" placeholder="Type your firstname..." autocorrect=off autocapitalize=words><br><br>
+                <span class="byline">Surname:</span><br>
+                <input type="text" name="lastname" placeholder="Type your surname..." autocorrect=off autocapitalize=words><br><br>
+                <span class="byline">E-mail Address:</span><br>
+                <input type="email" name="email" placeholder="Type your email..." autocorrect=off type=email required><br><br>
+                <span class="byline">Comments:</span><br>
+                <textarea name="message" rows="10" cols="30" placeholder="Type any comments here..."></textarea><br><br>
                 <button type="submit" class="button">Submit</button>
 
             </form>
