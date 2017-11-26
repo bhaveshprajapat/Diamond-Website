@@ -2,11 +2,15 @@
 COM1008 Diamond Website Assignment by Bhavesh Prajapat and Simon Bone
 Mobile First Cascading Style Sheet
 */
+/* TODO: COMMENT*/
+
+/* Remove margin and padding from body*/
 body {
     margin: 0;
     padding: 0;
     height: 100%;
 }
+/* Header styling */
 header {
     background-color: rgb(0, 148, 216);
     padding: 5px 3%;
@@ -21,21 +25,7 @@ header h1 {
 h1, p{
     font-family: sans-serif;
 }
-form{
-    margin: 2% 2%;
-}
-h2{
-    font-family: sans-serif;
-    font-size: 0.9em;
-}
-img{
-    border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition: 0.3s;
-}
-img:hover {
-    box-shadow: 0 9px 18px rgba(0,0,0,0.25), 0 9px 18px rgba(0,0,0,0.22);
-}
+/* Navbar styling */
 nav {
     padding: 5px 2%;
     color: gainsboro;
@@ -66,6 +56,7 @@ nav ul li a{
     font-size: 1.75em;
     color: antiquewhite;
 }
+/* CSS for links in Navbar*/
 nav ul li a:hover {
     color: white;
     background-color: rgb(101, 148, 188);
@@ -73,31 +64,7 @@ nav ul li a:hover {
 a:hover{
     text-decoration: underline;
 }
-footer{
-    background-color: skyblue;
-    padding: 5px 5%;
-    position: sticky;
-}
-footer p{
-    margin: 0.5% auto;
-    display: block;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 0.8em;
-}
-footer a{
-    font-family: sans-serif;
-    font-size: 1.1em;
-    color: black;
-}
-card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 5px 5% 5px 5%;
-    transition: 0.3s;
-}
-card:hover {
-    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
-}
+/* Simple CSS for card layout of each section*/
 section{
     margin: 10px 9%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -108,41 +75,12 @@ section{
 section:hover {
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
-
-.bigimg{
-    width: 45vw;
-    margin: 2% 3%;
-}
-.regimg{
-    width: 40vw;
-    margin: 2% 3%;
-}
-.smallimg{
-    width: 30vw;
-    margin: 2% 3%;
-}
-.xsmallimg{
-    width: 25vw;
-    margin: 2% 3%;
-}
-.floatright{
-    display: block;
-    margin: 1% auto;
-}
-.floatleft{
-    display: block;
-    margin: 1% auto;
-}
-.centered{
-    font-family: sans-serif;
-    text-align: center;
-    display: block;
-    margin: 0.5% auto;
-}
 /*
-FORM CSS START
+Form related CSS starts
 */
-
+form{
+    margin: 2% 2%;
+}
 input[type=text], input[type=email], select {
     font-family: sans-serif;
     width: 100%;
@@ -164,7 +102,6 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 11pt;
-    resize = none;
 }
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
     border: 3px solid #555; 
@@ -177,29 +114,90 @@ input.error {
 }
 button{
     background-color: rgb(100, 181, 246);
-    padding: 12px 30px;
+    padding: 2% 3%;
     font-family: sans-serif;
     color: ghostwhite;
     font-size: 1.25em;
-    display: inline-block;    
-    margin: 2% auto;
+    width: 100%;
+    margin: auto;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.disabled   {  
-    curor: not-allowed;
-    opacity: 0.6;  
+/*
+Form related CSS ends
+*/
+/*
+Image related CSS starts
+*/
+/* All images have shadow, rounded corners and a hover animation by default */
+img{
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.3s;
+}
+img:hover {
+    box-shadow: 0 9px 18px rgba(0,0,0,0.25), 0 9px 18px rgba(0,0,0,0.22);
+}
+/* Various image size classes */
+.bigimg{
+    width: 45vw;
+    margin: 2% 3%;
+}
+.regimg{
+    width: 40vw;
+    margin: 2% 3%;
+}
+.smallimg{
+    width: 30vw;
+    margin: 2% 3%;
+}
+.xsmallimg{
+    width: 25vw;
+    margin: 2% 3%;
+}
+/* Various image location classes with custom margins for each */
+.floatright{
+    display: block; /* DO NOT FLOAT ON MOBILE */
+    margin: 1% auto;
+}
+.floatleft{
+    display: block; /* DO NOT FLOAT ON MOBILE */
+    margin: 1% auto;
+}
+.centered{
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    margin: 0.5% auto;
+}
+/*
+Footer related CSS
+*/
+footer{
+    background-color: skyblue;
+    padding: 5px 5%;
+    position: sticky;
+}
+footer p{
+    margin: 0.5% auto;
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
+footer a{
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: black;
 }
 
-/*
-FORM CSS END
-*/
 
 /*
-MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
+Media query targets devices with > 800px IN WIDTH (i.e. desktop form factors)
 */
 @media (min-width: 800px) {
+    /* Make the header and navbar normal sized for desktop websites */
     header h1 {
         text-align: left;
         font-size: 2em;
@@ -217,11 +215,12 @@ MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
         color: antiquewhite;
     }
     .floatright{
-        float: right;
+        float: right; /* Floats items when the form factor allows */
     }
     .floatleft{
-        float: left;
+        float: left; /* Floats items when the form factor allows */
     }
+    /* Reconfigured sizes for images on devices with larger screens */
     .bigimg{
         width: 35vw;
         margin: 0.5% 3%;
@@ -239,8 +238,6 @@ MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
         margin: 0.5% 3%;
     }
     .centered{
-        font-family: sans-serif;
-        text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
@@ -250,6 +247,7 @@ MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
         margin: auto;
     }
     button{
+        width: 20%;
         display: block;
         margin: auto;
     }
