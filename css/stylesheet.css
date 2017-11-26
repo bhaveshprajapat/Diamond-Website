@@ -64,15 +64,15 @@ nav ul li a:hover {
 a:hover{
     text-decoration: underline;
 }
-/* Simple CSS for card layout of each section*/
-section{
+/* Simple CSS for card layout of each page*/
+main{
     margin: 10px 9%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 0 1%;
     padding: 2% 6%;
     transition: 0.3s;
 }
-section:hover {
+main:hover {
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
 /*
