@@ -24,17 +24,19 @@
 
         <section>
             <h1>Contact Us</h1>
-            <p>Complete form below</p>
+            <h2>To get in touch with us, please use the form provided below:</h2>
             <form action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="POST">
                 <input type="hidden" name="recipient"
                        value="BPrajapat1@sheffield.ac.uk">
                 <span class="byline">First name:</span><br><br>
-                <input type="text" name="firstname" autocorrect=off autocapitalize=words><br><br>
+                <input type="text" name="firstname" autocapitalize=words autofocus required placeholder="Joe"><br><br>
                 <span class="byline">Surname:</span><br><br>
-                <input type="text" name="lastname" autocorrect=off autocapitalize=words><br><br>
+                <input type="text" name="lastname" autocapitalize=words placeholder="Bloggs"><br><br>
                 <span class="byline">E-mail Address:</span><br><br>
-                <input type="text" name="email" type=email><br><br>
-                <textarea name="message" rows="10" cols="30">Write any other info you would like submitted here.</textarea><br><br>
+                <input type="text" name="contactemail" type=email required placeholder="someone@example.com"><br><br>
+                <span class="byline">Your message:</span><br><br>
+                <textarea name="message" rows="10" cols="30" required placeholder="Write any info you would like submitted here." ></textarea><br><br>
+                
                 <button type="submit" class="button">Submit</button>
 
             </form>
