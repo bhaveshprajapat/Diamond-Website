@@ -21,13 +21,20 @@ header h1 {
 h1, p{
     font-family: sans-serif;
 }
+form{
+    margin: 2% 2%;
+}
+h2{
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
 img{
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 img:hover {
-    box-shadow: 0 6px 12px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 9px 18px rgba(0,0,0,0.25), 0 9px 18px rgba(0,0,0,0.22);
 }
 nav {
     padding: 5px 2%;
@@ -93,6 +100,13 @@ card:hover {
 }
 section{
     margin: 10px 9%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 1% 1%;
+    padding: 3% 3%;
+    transition: 0.3s;
+}
+section:hover {
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
 .centeredfigurebig{
     font-family: sans-serif;
@@ -101,12 +115,19 @@ section{
     margin: 2% auto;
     width: 45vw;
 }
-.centeredfiguresmall, .centeredfigurexsmall{
+.centeredfiguresmall{
     font-family: sans-serif;
     text-align: center;
     display: block;
     margin: 0.5% auto;
-    width: 20vw;
+    width: 30vw;
+}
+.centeredfigurexsmall{
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    margin: 0.5% auto;
+    width: 30vw;
 }
 .centeredfigcaption{
     text-align: center;
@@ -115,17 +136,23 @@ section{
 }
 .floatimageright{
     display: block;
-    margin: 0.5% auto;
+    margin: 1% auto;
+    width: 30vw;
+}
+.biggerfloatimageright{
+    display: block;
+    margin: 1% auto;
     width: 30vw;
 }
 /*
 FORM CSS START
 */
+
 input[type=text], input[type=email], select {
     font-family: sans-serif;
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    width: 100%;
+    padding: 1% 1%;
+    margin: 1% 1%;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -134,9 +161,9 @@ input[type=text], input[type=email], select {
 }
 textarea {
     font-family: sans-serif;
-    width: 75%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    width: 100%;
+    padding: 1% 1%;
+    margin: 1% 1%;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -153,19 +180,27 @@ input.error {
 .byline{
     font-family: sans-serif;
 }
-.button  {
+button{
+    background-color: rgb(100, 181, 246);
     padding: 12px 30px;
+    font-family: sans-serif;
+    color: ghostwhite;
+    font-size: 1.25em;
     display: inline-block;    
+    margin: 2% auto;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
 .disabled   {  
     curor: not-allowed;
     opacity: 0.6;  
 }
 
-
 /*
 FORM CSS END
 */
+
 /*
 MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
 */
@@ -191,7 +226,13 @@ MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
     }
     .floatimageright{
         float: right;
+        margin: 2% 2%;
         width: 15vw;
+    }
+    .biggerfloatimageright{
+        float: right;
+        margin: 2% 2%;
+        width: 30vw;
     }
     .centeredfigurebig{
         width: 35vw;
@@ -200,7 +241,7 @@ MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
         font-family: sans-serif;
         text-align: center;
         display: block;
-        margin: 0.5% 0.5%;
+        margin: 0.5% auto;
         width: 20vw;
     }
     .centeredfigurexsmall{
@@ -209,5 +250,13 @@ MEDIA QUERY OVERRIDES FOR DEVICES > 800px IN WIDTH (i.e. Desktop)
         display: block;
         margin: 2% auto;
         width: 10vw;
+    }
+    /*
+    FORM CSS STARTS
+    */
+    input[type=text], .byline, textarea{
+        width: 50%;
+        display: block;
+        margin: auto;
     }
 }
