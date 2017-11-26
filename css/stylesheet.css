@@ -5,7 +5,7 @@ body {
 }
 header {
     background-color: rgb(0, 148, 216);
-    padding: 5px 5%;
+    padding: 5px 3%;
 
 }
 header h1 {
@@ -13,13 +13,21 @@ header h1 {
     color: lightgray;
     font-size: 1.25em;
     text-align:left;
-    padding: 2% 3%;
+    padding: 2% 1%;
 }
 h1, p{
     font-family: sans-serif;
 }
+img{
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.5s;
+}
+img:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 nav {
-    padding: 5px 5%;
+    padding: 5px 2%;
     color: gainsboro;
     background-color: rgb(100, 181, 246);
 
@@ -27,7 +35,7 @@ nav {
 nav ul{
     display: inline;
     list-style: none;
-    padding: 3%;
+    padding: 2%;
     margin-right: 0;
 }
 ul{
@@ -86,12 +94,19 @@ card:hover {
 section{
     margin: 10px 9%;
 }
-.centeredfigure{
+.centeredfigurebig{
     font-family: sans-serif;
     text-align: center;
     display: block;
-    margin: auto;
-    width: 40vh;
+    margin: 2% auto;
+    width: 40vw;
+}
+.centeredfiguresmall{
+    font-family: sans-serif;
+    text-align: center;
+    display: block;
+    margin: 2% auto;
+    width: 20vw;
 }
 .centeredfigcaption{
     text-align: center;
@@ -137,5 +152,11 @@ section{
         margin: 3% 3%;
         float: right;
         width: 15vw;
+    }
+    .centeredfigurebig{
+        width: 35vw;
+    }
+    .centeredfiguresmall{
+        width: 20vw;
     }
 }
