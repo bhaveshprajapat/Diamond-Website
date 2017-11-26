@@ -10,7 +10,6 @@ body {
 header {
     background-color: rgb(0, 148, 216);
     padding: 5px 3%;
-
 }
 header h1 {
     margin: 0;
@@ -34,7 +33,6 @@ nav {
     padding: 5px 2%;
     color: gainsboro;
     background-color: rgb(100, 181, 246);
-
 }
 nav ul{
     display: inline;
@@ -54,7 +52,6 @@ nav ul li {
     font-family: sans-serif;
     font-size: 0.45em;
     color: gainsboro;
-
 }
 nav ul li a{
     text-decoration: none;
@@ -73,7 +70,6 @@ footer{
     background-color: skyblue;
     padding: 5px 5%;
     position: sticky;
-
 }
 footer p{
     margin: 0.5% auto;
@@ -125,12 +121,6 @@ section{
 /*
 FORM CSS START
 */
-form    {
-    
-    
-    
-}
-
 input[type=text], input[type=email], select {
     font-family: sans-serif;
     width: 50%;
@@ -155,9 +145,7 @@ textarea {
     resize = none;
 }
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
-    
-    border: 3px solid #555;
-      
+    border: 3px solid #555; 
 }
 input.error {
     border-color: red;
@@ -166,16 +154,12 @@ input.error {
     font-family: sans-serif;
 }
 .button  {
-    
     padding: 12px 30px;
-    display: inline-block;
-      
+    display: inline-block;    
 }
-.disabled   {
-    
+.disabled   {  
     curor: not-allowed;
-    opacity: 0.6;
-    
+    opacity: 0.6;  
 }
 
 
