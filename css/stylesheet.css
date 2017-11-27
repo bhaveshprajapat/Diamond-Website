@@ -66,14 +66,14 @@ a:hover{
     text-decoration: underline;
 }
 /* Simple CSS for card layout of each page*/
-main{
+main, section{
     margin: 10px 9%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin: 0 1%;
     padding: 2% 6%;
     transition: 0.3s;
 }
-main:hover {
+main:hover, section:hover{
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
 main ul, main ul li{
@@ -108,7 +108,9 @@ textarea {
     font-size: 11pt;
 }
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
-    border: 3px solid #555; 
+    transition: 0.5s;
+    border: 2px solid #555;
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
 input.error {
     border-color: red;
@@ -177,6 +179,12 @@ img:hover {
     font-family: sans-serif;
     text-align: center;
     display: block;
+    margin: 0.5% auto;
+}
+.centeredul{
+    font-family: sans-serif;
+    text-align: center;
+    display: inline-block;
     margin: 0.5% auto;
 }
 /*
