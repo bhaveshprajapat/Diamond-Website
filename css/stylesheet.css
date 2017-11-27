@@ -32,9 +32,9 @@ nav {
     background-color: #0E77CD;
 }
 nav ul{
-    display: inline;
+    display: flex;
     list-style: none;
-    padding: 2%;
+    
     margin-right: 0;
 }
 ul{
@@ -45,6 +45,7 @@ ul{
 nav ul li {
     display: inline;
     padding-right: 1.5%;
+    padding: 0 0.5em;
     text-align: left;
     font-family: sans-serif;
     font-size: 0.45em;
@@ -213,7 +214,7 @@ Media query targets devices with > 800px IN WIDTH (i.e. desktop form factors)
     }
     nav ul{
         margin-top: 0;
-        padding: 2% 5%;
+        padding: 0.5% 5%;
         list-style: none;
     }
     nav ul li {
