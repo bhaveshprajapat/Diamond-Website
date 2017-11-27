@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    min-height: 100%;
 }
 /* Header styling */
 header {
@@ -29,13 +30,9 @@ h1, p{
 /* Navbar styling */
 nav {
     padding: 5px 2%;
-    <<<<<<< Updated upstream
     color: gainsboro;
     background-color: rgb(100, 181, 246);
-    =======
-    color: white;
-    background-color: #0E77CD;
-    >>>>>>> Stashed changes
+    bottom: 0px;
 }
 nav ul{
     display: inline;
