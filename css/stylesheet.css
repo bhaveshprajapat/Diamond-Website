@@ -75,6 +75,9 @@ main{
 main:hover {
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
 }
+main ul, main ul li{
+    padding: 3px;
+}
 /*
 Form related CSS starts
 */
@@ -140,6 +143,10 @@ img:hover {
     box-shadow: 0 9px 18px rgba(0,0,0,0.25), 0 9px 18px rgba(0,0,0,0.22);
 }
 /* Various image size classes */
+.hugeimg{
+    width: 60vw;
+    margin: 2% 3%;
+}
 .bigimg{
     width: 45vw;
     margin: 2% 3%;
@@ -222,7 +229,7 @@ Media query targets devices with > 800px IN WIDTH (i.e. desktop form factors)
         float: left; /* Floats items when the form factor allows */
     }
     /* Reconfigured sizes for images on devices with larger screens */
-    .bigimg{
+    .bigimg, .hugeimg{
         width: 35vw;
         margin: 0.5% 3%;
     }
