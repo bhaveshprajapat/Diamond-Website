@@ -2,7 +2,6 @@
 COM1008 Diamond Website Assignment by Bhavesh Prajapat and Simon Bone
 Mobile First Cascading Style Sheet
 */
-/* TODO: COMMENT*/
 
 /* Remove margin and padding from body*/
 body {
@@ -13,13 +12,12 @@ body {
 }
 /* Header styling */
 header {
-    background-color: rgb(0, 148, 216);
     background-color: #1085E5;
     padding: 5px 3%;
 }
 header h1 {
     margin: 0;
-    color: lightgray;
+    color: white;
     font-size: 1.25em;
     text-align:left;
     padding: 2% 1%;
@@ -30,9 +28,8 @@ h1, p{
 /* Navbar styling */
 nav {
     padding: 5px 2%;
-    color: gainsboro;
-    background-color: rgb(100, 181, 246);
-    bottom: 0px;
+    color: white;
+    background-color: #0E77CD;
 }
 nav ul{
     display: inline;
